@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "shapely-pydantic"
+version = "0.1.0"
+description = ""
+authors = ["David Kwast"]
+keywords = ["Shapely", "Pydantic"]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Typing :: Typed",
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pydantic = ">=2.0,<3.0"
+shapely = ">=2.0,<3.0"
+
+
+[tool.poetry.group.development.dependencies]
+pytest = "^8.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
