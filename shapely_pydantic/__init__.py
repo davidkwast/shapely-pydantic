@@ -58,9 +58,48 @@ class Geometry(_Geometry):
         return geometry_schema()
 
 
+#
+
+
 class Point(Geometry):
     pass
 
 
 class MultiPoint(Geometry):
+    pass
+
+
+#
+
+
+class LinearRing(Geometry):
+    pass
+
+
+#
+
+
+class LineString(Geometry):
+    pass
+
+
+class MultiLineString(Geometry):
+    pass
+
+
+#
+
+
+class Polygon(Geometry):
+    pass
+
+
+class MultiPolygon(Geometry):
+    pass
+
+
+#
+
+
+class GeometryCollection(Geometry):
     pass

@@ -5,9 +5,27 @@ from shapely.geometry import MultiPoint as _MultiPoint
 
 from shapely_pydantic import Point
 from shapely_pydantic import MultiPoint
+from shapely_pydantic import LineString
+from shapely_pydantic import MultiLineString
+from shapely_pydantic import Polygon
+from shapely_pydantic import Multipolygon
+from shapely_pydantic import LinearRing
+from shapely_pydantic import GeometryCollection
 
 #
-def test_test():   # :-P
+def test_types():   # :-P
+
+    #
+
+    class Model(BaseModel):
+        point: Point
+        multipoint: MultiPoint
+        linestring: LineString
+        multilinestring: MultiLineString
+        polygon: Polygon
+        multipolygon: Multipolygon
+        linearring: LinearRing
+        geometrycollection: GeometryCollection
 
     #
     class PointModel(BaseModel):
